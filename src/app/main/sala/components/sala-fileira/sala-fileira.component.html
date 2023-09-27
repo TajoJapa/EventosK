@@ -1,0 +1,8 @@
+<div class="fileira">
+    <div>{{fileira.fileira}}</div>
+    <sala-cadeira 
+        *ngFor="let assento of fileira.assentos" 
+        [assento]="assento.cadeira"
+        [tipo]="assento.tipoCadeira"
+    ></sala-cadeira>
+</div>
