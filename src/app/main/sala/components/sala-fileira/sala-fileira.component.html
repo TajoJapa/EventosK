@@ -1,8 +1,15 @@
 <div class="fileira">
-    <div>{{fileira.fileira}}</div>
-    <sala-cadeira 
-        *ngFor="let assento of fileira.assentos" 
-        [assento]="assento.cadeira"
-        [tipo]="assento.tipoCadeira"
-    ></sala-cadeira>
+    <div>{{_fileira.fileira}}</div>
+    <span *ngFor="let setor of setores" class="setor">
+        <sala-cadeira 
+            *ngFor="let assento of setor"
+            [assento]="assento.cadeira"
+            [tipo]="assento.tipoCadeira"
+            [fileira]="assento.fileira"
+            [setor]="assento.setor"
+            [reservado]="assento.reservado"
+            [reserva]="assento.reserva"
+            [chave]="assento.chave"
+        ></sala-cadeira>
+    </span>
 </div>

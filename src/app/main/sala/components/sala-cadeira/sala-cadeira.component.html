@@ -1,4 +1,4 @@
-<div class="cadeira" *ngIf="tipo=='NORMAL'">{{assento}}</div>
-<div class="cadeira obeso" *ngIf="tipo=='OBESO'">{{assento}}</div>
-<div class="cadeira pmr" *ngIf="tipo=='PMR'">{{assento}}</div>
-<div class="cadeira cadeirante" *ngIf="tipo=='CADEIRANTE'">{{assento}}</div>
+<div (click)="selecionaCadeira($event)" class="cadeira" *ngIf="tipo=='NORMAL'">{{assento}}</div>
+<div (click)="selecionaCadeira($event)" class="cadeira obeso" *ngIf="tipo=='OBESO'">{{assento}}</div>
+<div (click)="selecionaCadeira($event)" class="cadeira pmr" *ngIf="tipo=='PMR'">{{assento}}</div>
+<div (click)="selecionaCadeira($event)" class="cadeira cadeirante" *ngIf="tipo=='CADEIRANTE'">{{assento}}</div>

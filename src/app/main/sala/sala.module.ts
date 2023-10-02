@@ -6,6 +6,7 @@ import { SalaAuditorioComponent } from './components/sala-auditorio/sala-auditor
 import { SalaCadeiraComponent } from './components/sala-cadeira/sala-cadeira.component';
 import { SalaPageComponent } from './page/sala-page/sala-page.component';
 import { SalaFileiraComponent } from './components/sala-fileira/sala-fileira.component';
+import { SalaCadeiraService } from './services/sala-cadeira.service';
 
 
 @NgModule({
@@ -21,6 +22,9 @@ import { SalaFileiraComponent } from './components/sala-fileira/sala-fileira.com
   ],
   exports:[
     SalaPageComponent
+  ],
+  providers:[
+    SalaCadeiraService
   ]
 })
 export class SalaModule { }
